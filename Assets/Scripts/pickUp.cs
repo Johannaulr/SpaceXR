@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class pickUp : MonoBehaviour
 {
+    public GameObject cube;
+    public Material red;
+    public Material standard;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -18,7 +20,13 @@ public class pickUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Picked up");
-        //serialController.turnOnLED();
+        serialController.turnOnLED();
+        cube.GetComponent<MeshRenderer>().material = red;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        serialController.turnOffLED();
+        cube.GetComponent<MeshRenderer>().material = standard;
     }
 }

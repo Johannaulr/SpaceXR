@@ -7,7 +7,7 @@ using System.Threading;
 public class serialController : MonoBehaviour
 {
 
-    SerialPort sp = new SerialPort("COM6", 9600);
+    public static SerialPort sp = new SerialPort("COM6", 9600);
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +57,32 @@ public class serialController : MonoBehaviour
 
     public static void turnOnLED()
     {
-        //sp.Write("");
+        if (!sp.IsOpen)
+        {
+            sp.Open();
+            sp.Write("y");
+        }
+
+        else
+        {
+            sp.Write("y");
+        }
+
+    }
+
+    public static void turnOffLED()
+    {
+        if (!sp.IsOpen)
+        {
+            sp.Open();
+            sp.Write("n");
+        }
+
+        else
+        {
+            sp.Write("n");
+        }
+
     }
 }
+
