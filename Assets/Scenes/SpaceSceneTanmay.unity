@@ -1552,7 +1552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4352668662936965590, guid: 5b2febef9538fb34e972bb0070c107a5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4352668662936965597, guid: 5b2febef9538fb34e972bb0070c107a5, type: 3}
       propertyPath: m_RootOrder
@@ -8380,6 +8380,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f1d0015f249564fa41b04a30d5ae74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cube: {fileID: 0}
+  red: {fileID: 0}
+  standard: {fileID: 0}
 --- !u!1 &585518296
 GameObject:
   m_ObjectHideFlags: 0
@@ -21197,6 +21200,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f1d0015f249564fa41b04a30d5ae74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cube: {fileID: 0}
+  red: {fileID: 0}
+  standard: {fileID: 0}
 --- !u!1 &1479316953
 GameObject:
   m_ObjectHideFlags: 0
@@ -28518,7 +28524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1926928972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32132,19 +32138,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5053449048249202232, guid: 9a4f67196f4cd0f40a79ff787ea0a0d9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5053449048249202232, guid: 9a4f67196f4cd0f40a79ff787ea0a0d9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5053449048249202232, guid: 9a4f67196f4cd0f40a79ff787ea0a0d9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5053449048249202232, guid: 9a4f67196f4cd0f40a79ff787ea0a0d9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5053449048249202232, guid: 9a4f67196f4cd0f40a79ff787ea0a0d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -32152,7 +32158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5053449048249202232, guid: 9a4f67196f4cd0f40a79ff787ea0a0d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 5053449048249202232, guid: 9a4f67196f4cd0f40a79ff787ea0a0d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -32471,7 +32477,7 @@ GameObject:
   - component: {fileID: 6757553451550998750}
   - component: {fileID: 6757553451550998751}
   m_Layer: 0
-  m_Name: Planet
+  m_Name: Jupiter_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
