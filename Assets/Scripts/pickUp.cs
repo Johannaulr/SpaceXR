@@ -7,6 +7,7 @@ public class pickUp : MonoBehaviour
     public GameObject cube;
     public Material red;
     public Material standard;
+    public GameObject UI;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,13 +21,22 @@ public class pickUp : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        serialController.turnOnLED();
-        cube.GetComponent<MeshRenderer>().material = red;
+        if (other.tag == "Planet")
+        {
+            //serialController.turnOnLED();
+            cube.GetComponent<MeshRenderer>().material = red;
+            UI.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        serialController.turnOffLED();
-        cube.GetComponent<MeshRenderer>().material = standard;
+        if (other.tag=="Planet")
+        {
+            //serialController.turnOffLED();
+                    cube.GetComponent<MeshRenderer>().material = standard;
+                    UI.SetActive(false);
+        }
     }
+        
 }
