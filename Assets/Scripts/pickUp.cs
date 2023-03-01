@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class pickUp : MonoBehaviour
 {
-    public GameObject cube;
-    public Material red;
-    public Material standard;
     public GameObject UI;
     // Start is called before the first frame update
     void Start()
