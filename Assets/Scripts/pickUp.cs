@@ -18,13 +18,13 @@ public class pickUp : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         serialController.turnOnLED();
         cube.GetComponent<MeshRenderer>().material = red;
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         serialController.turnOffLED();
         cube.GetComponent<MeshRenderer>().material = standard;

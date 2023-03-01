@@ -7,7 +7,7 @@ using System.Threading;
 public class serialController : MonoBehaviour
 {
 
-    public static SerialPort sp = new SerialPort("COM6", 9600);
+    public static SerialPort sp = new SerialPort("COM10", 9600);
     // Start is called before the first frame update
     void Start()
     {
