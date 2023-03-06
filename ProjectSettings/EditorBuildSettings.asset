@@ -20,9 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Oculus/Interaction/Samples/Scenes/Examples/TouchGrabExamples.unity
     guid: ade7d3882b4495145a8fe79f5624beab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SpaceSceneJohanna.unity
     guid: 6fe02f6b49d0cd84d97f371db7c4ed78
+  - enabled: 1
+    path: Assets/Scenes/PlanetScroll_TP.unity
+    guid: c1a4e6bebb36fe444bd3690bbb204dcd
   - enabled: 0
     path: Assets/Scenes/FinalScene.unity
     guid: 15c9b465432c77c46ac079322e93ed90
