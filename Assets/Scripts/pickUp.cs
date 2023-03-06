@@ -4,17 +4,29 @@ using UnityEngine;
 
 public class pickUp : MonoBehaviour
 {
-    public GameObject UI;
-
-    private GameObject Earth;
+    public Transform UI;
     private GameObject EarthUI;
+    private GameObject MercuryUI;
+    private GameObject VenusUI;
+    private GameObject MarsUI;
+    private GameObject SaturnUI;
+    private GameObject UranusUI;
+    private GameObject NeptuneUI;
+    private GameObject JupiterUI;
+
     // Start is called before the first frame update
     void Start()
     {
-        Earth = GameObject.Find("Earth");
-        EarthUI = GameObject.Find("EarthUI");
-    }
+        EarthUI = UI.Find("CanvasEarth").gameObject;
+        MercuryUI = UI.Find("CanvasMercury").gameObject;
+        VenusUI = UI.Find("CanvasVenus").gameObject;
+        MarsUI = UI.Find("CanvasMars").gameObject;
+        SaturnUI = UI.Find("CanvasSaturn").gameObject;
+        UranusUI = UI.Find("CanvasUranus").gameObject;
+        NeptuneUI = UI.Find("CanvasNeptune").gameObject;
+        JupiterUI = UI.Find("CanvasJupiter").gameObject;
 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -23,28 +35,83 @@ public class pickUp : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Planet")
+        string planetTag = other.tag;
+        
+        switch (planetTag)
         {
 
-            UI.SetActive(true);
-            if (other == Earth)
-            {
-                //serialController.turnOnLED();
+            case "Earth": 
                 EarthUI.SetActive(true);
-            }
+                break;
+
+            case "Mercury":
+                MercuryUI.SetActive(true);
+                break;
+
+            case "Venus":
+                VenusUI.SetActive(true);
+                break;
+
+            case "Mars":
+                MarsUI.SetActive(true);
+                break;
+
+            case "Saturn":
+                SaturnUI.SetActive(true);
+                break;
+
+            case "Uranus":
+                UranusUI.SetActive(true);
+                break;
+
+            case "Neptune":
+                NeptuneUI.SetActive(true);
+                break;
+
+            case "Jupiter":
+                JupiterUI.SetActive(true);
+                break;
 
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag=="Planet")
-        {
-            //serialController.turnOffLED();
+        string planetTag = other.tag;
 
-                   // cube.GetComponent<MeshRenderer>().material = standard;
+        switch (planetTag) {
 
-                    UI.SetActive(false);
+            case "Earth":
+                EarthUI.SetActive(false);
+                break;
+
+            case "Mercury":
+                MercuryUI.SetActive(false);
+                break;
+
+            case "Venus":
+                VenusUI.SetActive(false);
+                break;
+
+            case "Mars":
+                MarsUI.SetActive(false);
+                break;
+
+            case "Saturn":
+                SaturnUI.SetActive(false);
+                break;
+
+            case "Uranus":
+                UranusUI.SetActive(false);
+                break;
+
+            case "Neptune":
+                NeptuneUI.SetActive(false);
+                break;
+
+            case "Jupiter":
+                JupiterUI.SetActive(false);
+                break;
         }
     }
         
