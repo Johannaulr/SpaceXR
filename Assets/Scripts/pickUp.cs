@@ -42,14 +42,17 @@ public class pickUp : MonoBehaviour
 
             case "Earth": 
                 EarthUI.SetActive(true);
+                serialController.Temp_Earth();
                 break;
 
             case "Mercury":
                 MercuryUI.SetActive(true);
+                serialController.Temp_Mercury();
                 break;
 
             case "Venus":
                 VenusUI.SetActive(true);
+                serialController.Temp_Venus();
                 break;
 
             case "Mars":
@@ -77,6 +80,7 @@ public class pickUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        serialController.Temp_Reset();
         string planetTag = other.tag;
 
         switch (planetTag) {

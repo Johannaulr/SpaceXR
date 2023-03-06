@@ -5,11 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - SamplesInfoPanel
-  - Planet
-  - Reticle
-  - cube
   - SkyboxCamera
   - Earth
+  - Jupiter
+  - Mercury
+  - Venus
+  - Saturn
+  - Neptune
+  - Uranus
+  - Mars
   layers:
   - Default
   - TransparentFX
