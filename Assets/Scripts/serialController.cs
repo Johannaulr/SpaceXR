@@ -7,7 +7,7 @@ using System.Threading;
 public class serialController : MonoBehaviour
 {
 
-    public static SerialPort sp = new SerialPort("COM10", 9600);
+    public static SerialPort sp = new SerialPort("COM12", 9600);
     // Start is called before the first frame update
     void Start()
     {
@@ -55,34 +55,71 @@ public class serialController : MonoBehaviour
         sp.Close();
     }
 
-    public static void turnOnLED()
+    public static void Temp_Earth()
     {
         if (!sp.IsOpen)
         {
             sp.Open();
-            sp.Write("y");
+            sp.Write("E");
         }
+        
+
 
         else
         {
-            sp.Write("y");
+            sp.Write("E");
         }
-
+        Debug.Log("Earth Picked Up");
     }
-
-    public static void turnOffLED()
+    public static void Temp_Mercury()
     {
         if (!sp.IsOpen)
         {
             sp.Open();
-            sp.Write("n");
+            sp.Write("M");
         }
+
+
 
         else
         {
-            sp.Write("n");
+            sp.Write("M");
+        }
+        Debug.Log("Mercury Picked Up");
+    }
+    public static void Temp_Venus()
+    {
+        if (!sp.IsOpen)
+        {
+            sp.Open();
+            sp.Write("V");
         }
 
+
+
+        else
+        {
+            sp.Write("V");
+        }
+        Debug.Log("Venus Picked Up");
     }
+    public static void Temp_Reset()
+    {
+        if (!sp.IsOpen)
+        {
+            sp.Open();
+            sp.Write("empty");
+        }
+
+
+
+        else
+        {
+            sp.Write("empty");
+        }
+        Debug.Log("Planet put down");
+    }
+
+
 }
 
