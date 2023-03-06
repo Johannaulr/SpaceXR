@@ -25,17 +25,14 @@ public class pickUp : MonoBehaviour
     {
         if (other.tag == "Planet")
         {
-<<<<<<< Updated upstream
-            //serialController.turnOnLED();
-            //cube.GetComponent<MeshRenderer>().material = red;
+
             UI.SetActive(true);
-=======
             if (other == Earth)
             {
                 //serialController.turnOnLED();
                 EarthUI.SetActive(true);
             }
->>>>>>> Stashed changes
+
         }
     }
 
@@ -44,10 +41,9 @@ public class pickUp : MonoBehaviour
         if (other.tag=="Planet")
         {
             //serialController.turnOffLED();
-<<<<<<< Updated upstream
+
                    // cube.GetComponent<MeshRenderer>().material = standard;
-=======
->>>>>>> Stashed changes
+
                     UI.SetActive(false);
         }
     }
