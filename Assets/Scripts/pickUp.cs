@@ -21,7 +21,7 @@ public class pickUp : MonoBehaviour
         if (other.tag == "Planet")
         {
             //serialController.turnOnLED();
-            cube.GetComponent<MeshRenderer>().material = red;
+            //cube.GetComponent<MeshRenderer>().material = red;
             UI.SetActive(true);
         }
     }
@@ -31,7 +31,7 @@ public class pickUp : MonoBehaviour
         if (other.tag=="Planet")
         {
             //serialController.turnOffLED();
-                    cube.GetComponent<MeshRenderer>().material = standard;
+                   // cube.GetComponent<MeshRenderer>().material = standard;
                     UI.SetActive(false);
         }
     }
