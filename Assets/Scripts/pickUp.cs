@@ -5,32 +5,61 @@ using UnityEngine;
 public class pickUp : MonoBehaviour
 {
     public Transform UI;
-    private GameObject EarthUI;
-    private GameObject MercuryUI;
-    private GameObject VenusUI;
-    private GameObject MarsUI;
-    private GameObject SaturnUI;
-    private GameObject UranusUI;
-    private GameObject NeptuneUI;
-    private GameObject JupiterUI;
+    public Transform Positions;
+
+    private GameObject earthUI;
+    private GameObject earthGhost;
+
+    private GameObject mercuryUI;
+    private GameObject mercuryGhost;
+
+    private GameObject venusUI;
+    private GameObject venusGhost;
+
+    private GameObject marsUI;
+    private GameObject marsGhost;
+
+    private GameObject saturnUI;
+    private GameObject saturnGhost;
+
+    private GameObject uranusUI;
+    private GameObject uranusGhost;
+
+    private GameObject neptuneUI;
+    private GameObject neptuneGhost;
+
+    private GameObject jupiterUI;
+    private GameObject jupiterGhost;
+
+    private dialogWindowManager dialogWindowManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        EarthUI = UI.Find("CanvasEarth").gameObject;
-        MercuryUI = UI.Find("CanvasMercury").gameObject;
-        VenusUI = UI.Find("CanvasVenus").gameObject;
-        MarsUI = UI.Find("CanvasMars").gameObject;
-        SaturnUI = UI.Find("CanvasSaturn").gameObject;
-        UranusUI = UI.Find("CanvasUranus").gameObject;
-        NeptuneUI = UI.Find("CanvasNeptune").gameObject;
-        JupiterUI = UI.Find("CanvasJupiter").gameObject;
+        earthUI = UI.Find("CanvasEarth").gameObject;
+        earthGhost = Positions.Find("EarthPos/Ghost").gameObject;
 
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
+        mercuryUI = UI.Find("CanvasMercury").gameObject;
+        mercuryGhost = Positions.Find("MercuryPos/Ghost").gameObject;
+
+        venusUI = UI.Find("CanvasVenus").gameObject;
+        venusGhost = Positions.Find("VenusPos/Ghost").gameObject;
+
+        marsUI = UI.Find("CanvasMars").gameObject;
+        marsGhost = Positions.Find("MarsPos/Ghost").gameObject;
+
+        saturnUI = UI.Find("CanvasSaturn").gameObject;
+        saturnGhost = Positions.Find("SaturnPos/Ghost").gameObject;
+
+        uranusUI = UI.Find("CanvasUranus").gameObject;
+        uranusGhost = Positions.Find("UranusPos/Ghost").gameObject;
+
+        neptuneUI = UI.Find("CanvasNeptune").gameObject;
+        neptuneGhost = Positions.Find("NeptunePos/Ghost").gameObject;
+
+        jupiterUI = UI.Find("CanvasJupiter").gameObject;
+        jupiterGhost = Positions.Find("JupiterPos/Ghost").gameObject;
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -40,39 +69,55 @@ public class pickUp : MonoBehaviour
         switch (planetTag)
         {
 
-            case "Earth": 
-                EarthUI.SetActive(true);
+            case "Earth":
+                earthGhost.SetActive(true);
+                dialogWindowManager = earthUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.open();
                 serialController.Temp_Earth();
                 break;
 
             case "Mercury":
-                MercuryUI.SetActive(true);
+                mercuryGhost.SetActive(true);
+                dialogWindowManager = mercuryUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.open();
                 serialController.Temp_Mercury();
                 break;
 
             case "Venus":
-                VenusUI.SetActive(true);
+                venusGhost.SetActive(true);
+                dialogWindowManager = venusUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.open();
                 serialController.Temp_Venus();
                 break;
 
             case "Mars":
-                MarsUI.SetActive(true);
+                marsGhost.SetActive(true);
+                dialogWindowManager = marsUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.open();
                 break;
 
             case "Saturn":
-                SaturnUI.SetActive(true);
+                saturnGhost.SetActive(true);
+                dialogWindowManager = saturnUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.open();
                 break;
 
             case "Uranus":
-                UranusUI.SetActive(true);
+                uranusGhost.SetActive(true);
+                dialogWindowManager = uranusUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.open();
                 break;
 
             case "Neptune":
-                NeptuneUI.SetActive(true);
+                neptuneGhost.SetActive(true);
+                dialogWindowManager = neptuneUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.open();
                 break;
 
             case "Jupiter":
-                JupiterUI.SetActive(true);
+                jupiterGhost.SetActive(true);
+                dialogWindowManager = jupiterUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.open();
                 break;
 
         }
@@ -80,41 +125,57 @@ public class pickUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        serialController.Temp_Reset();
+        //serialController.Temp_Reset();
         string planetTag = other.tag;
 
         switch (planetTag) {
 
             case "Earth":
-                EarthUI.SetActive(false);
+                earthGhost.SetActive(false);
+                dialogWindowManager = earthUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.close();
                 break;
 
             case "Mercury":
-                MercuryUI.SetActive(false);
+                mercuryGhost.SetActive(false);
+                dialogWindowManager = mercuryUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.close();
                 break;
 
             case "Venus":
-                VenusUI.SetActive(false);
+                venusGhost.SetActive(false);
+                dialogWindowManager = venusUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.close();
                 break;
 
             case "Mars":
-                MarsUI.SetActive(false);
+                marsGhost.SetActive(false);
+                dialogWindowManager = marsUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.close();
                 break;
 
             case "Saturn":
-                SaturnUI.SetActive(false);
+                saturnGhost.SetActive(false);
+                dialogWindowManager = saturnUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.close();
                 break;
 
             case "Uranus":
-                UranusUI.SetActive(false);
+                uranusGhost.SetActive(false);
+                dialogWindowManager = uranusUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.close();
                 break;
 
             case "Neptune":
-                NeptuneUI.SetActive(false);
+                neptuneGhost.SetActive(false);
+                dialogWindowManager = neptuneUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.close();
                 break;
 
             case "Jupiter":
-                JupiterUI.SetActive(false);
+                jupiterGhost.SetActive(false);
+                dialogWindowManager = jupiterUI.GetComponent<dialogWindowManager>();
+                dialogWindowManager.close();
                 break;
         }
     }
