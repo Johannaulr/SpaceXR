@@ -33,9 +33,20 @@ public class pickUp : MonoBehaviour
 
     private dialogWindowManager dialogWindowManager;
 
+    private warningWindowManager warningWindowManager;
+    private GameObject windowWarning;
+
+    public GameObject enabledButton;
+    public GameObject disabledButton;
+
     // Start is called before the first frame update
     void Start()
     {
+        windowWarning = GameObject.Find("ButtonWarning");
+        warningWindowManager = windowWarning.GetComponent<warningWindowManager>();
+        enabledButton.SetActive(true);
+        disabledButton.SetActive(false);
+
         earthUI = UI.Find("CanvasEarth").gameObject;
         earthGhost = Positions.Find("EarthPos/Ghost").gameObject;
 
@@ -64,6 +75,7 @@ public class pickUp : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+
         string planetTag = other.tag;
         
         switch (planetTag)
@@ -73,6 +85,8 @@ public class pickUp : MonoBehaviour
                 earthGhost.SetActive(true);
                 dialogWindowManager = earthUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.open();
+                enabledButton.SetActive(false);
+                disabledButton.SetActive(true);
                 serialController.Temp_Earth();
                 break;
 
@@ -80,6 +94,8 @@ public class pickUp : MonoBehaviour
                 mercuryGhost.SetActive(true);
                 dialogWindowManager = mercuryUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.open();
+                enabledButton.SetActive(false);
+                disabledButton.SetActive(true);
                 serialController.Temp_Mercury();
                 break;
 
@@ -87,6 +103,8 @@ public class pickUp : MonoBehaviour
                 venusGhost.SetActive(true);
                 dialogWindowManager = venusUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.open();
+                enabledButton.SetActive(false);
+                disabledButton.SetActive(true);
                 serialController.Temp_Venus();
                 break;
 
@@ -94,30 +112,40 @@ public class pickUp : MonoBehaviour
                 marsGhost.SetActive(true);
                 dialogWindowManager = marsUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.open();
+                enabledButton.SetActive(false);
+                disabledButton.SetActive(true);
                 break;
 
             case "Saturn":
                 saturnGhost.SetActive(true);
                 dialogWindowManager = saturnUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.open();
+                enabledButton.SetActive(false);
+                disabledButton.SetActive(true);
                 break;
 
             case "Uranus":
                 uranusGhost.SetActive(true);
                 dialogWindowManager = uranusUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.open();
+                enabledButton.SetActive(false);
+                disabledButton.SetActive(true);
                 break;
 
             case "Neptune":
                 neptuneGhost.SetActive(true);
                 dialogWindowManager = neptuneUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.open();
+                enabledButton.SetActive(false);
+                disabledButton.SetActive(true);
                 break;
 
             case "Jupiter":
                 jupiterGhost.SetActive(true);
                 dialogWindowManager = jupiterUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.open();
+                enabledButton.SetActive(false);
+                disabledButton.SetActive(true);
                 break;
 
         }
@@ -125,7 +153,9 @@ public class pickUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
         //serialController.Temp_Reset();
+
         string planetTag = other.tag;
 
         switch (planetTag) {
@@ -134,50 +164,73 @@ public class pickUp : MonoBehaviour
                 earthGhost.SetActive(false);
                 dialogWindowManager = earthUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.close();
+                enabledButton.SetActive(true);
+                disabledButton.SetActive(false);
+                warningWindowManager.close();
                 break;
 
             case "Mercury":
                 mercuryGhost.SetActive(false);
                 dialogWindowManager = mercuryUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.close();
+                enabledButton.SetActive(true);
+                disabledButton.SetActive(false);
+                warningWindowManager.close();
                 break;
 
             case "Venus":
                 venusGhost.SetActive(false);
                 dialogWindowManager = venusUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.close();
+                enabledButton.SetActive(true);
+                disabledButton.SetActive(false);
+                warningWindowManager.close();
                 break;
 
             case "Mars":
                 marsGhost.SetActive(false);
                 dialogWindowManager = marsUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.close();
+                enabledButton.SetActive(true);
+                disabledButton.SetActive(false);
+                warningWindowManager.close();
                 break;
 
             case "Saturn":
                 saturnGhost.SetActive(false);
                 dialogWindowManager = saturnUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.close();
+                enabledButton.SetActive(true);
+                disabledButton.SetActive(false);
+                warningWindowManager.close();
                 break;
 
             case "Uranus":
                 uranusGhost.SetActive(false);
                 dialogWindowManager = uranusUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.close();
+                enabledButton.SetActive(true);
+                disabledButton.SetActive(false);
+                warningWindowManager.close();
                 break;
 
             case "Neptune":
                 neptuneGhost.SetActive(false);
                 dialogWindowManager = neptuneUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.close();
+                enabledButton.SetActive(true);
+                disabledButton.SetActive(false);
+                warningWindowManager.close();
                 break;
 
             case "Jupiter":
                 jupiterGhost.SetActive(false);
                 dialogWindowManager = jupiterUI.GetComponent<dialogWindowManager>();
                 dialogWindowManager.close();
+                enabledButton.SetActive(true);
+                disabledButton.SetActive(false);
+                warningWindowManager.close();
                 break;
         }
     }
-        
 }

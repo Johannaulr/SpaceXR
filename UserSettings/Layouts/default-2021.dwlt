@@ -310,7 +310,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 2201, y: 1440}
+  m_TargetSize: {x: 1467.3334, y: 960}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -325,10 +325,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -733.6667
-    m_HBaseRangeMax: 733.6667
-    m_VBaseRangeMin: -480
-    m_VBaseRangeMax: 480
+    m_HBaseRangeMin: -489.11115
+    m_HBaseRangeMax: 489.11115
+    m_VBaseRangeMin: -320
+    m_VBaseRangeMax: 320
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -399,20 +399,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 32960300
-      m_LastClickedID: 235058
-      m_ExpandedIDs: f6fefcff42fffcffc414fdff2c23fdff7823fdfffa38fdff9c81fdffe881fdff6a97fdff04c1fdff50c1fdffd2d6fdff0eecfdff5aecfdffdc01feff2498feff7098fefff2adfeff02d8feff4ed8feffd0edfeff0c15ffff5815ffffda2affff6c5ffffffc82ffffb086fffffc86ffff7e9cffff5cc0ffffaec0ffff78dbffff30fbffff486a00008aa70000f00701005a08010018210100c662010080af01003afc0100f4480200ae950200f6ea0200b03703006a840300
+      m_SelectedIDs: 16561100
+      m_LastClickedID: 1136150
+      m_ExpandedIDs: 7cd5f5ffcad5f5fff8eaf5ff1c2af6ff6a2af6ff983ff6ff8643f6ffd443f6ff0259f6ffc874f6ff1675f6ff448af6ff2a16f7ff7816f7ffa62bf7ffc86bf7ff166cf7ff4481f7ff5e9cf7ffac9cf7ffdab1f7ffe4e6f7ff32e7f7ff60fcf7ff0600f8ff5400f8ff8215f8ff2accf8ff78ccf8ffa6e1f8ffeae8f8ff38e9f8ff66fef8ff2202f9ff7402f9ffea1cf9ffbe23f9ff1024f9ff863ef9ff1e46f9ff6e46f9ff9c5bf9ffcc5ff9ff1a60f9ff4875f9ff6c7ef9ffbe7ef9ff3899f9ff9ea1f9ffeca1f9ff1ab7f9ff3cbbf9ff8abbf9ffb8d0f9ff74d4f9ffc6d4f9ff3ceff9ff1cf4f9ff6af4f9ff9809faff540dfaffa60dfaff1c28faff6c3afaffde3afaff6650faff4465faffbc65faff407bfaff2483faff9e83faff2299faff209dfaff949dfaff18b3fafff2b8faff60b9faffe4cefaff4cd3faffbed3faff98e9faff4621fbffbe21fbff8a3cfbff5c53fbff6053fbff7053fbff7853fbff8c53fbffb45cfbff2c5dfbff1078fbffac81fbff2282fbff069dfbff52a4fbffc4a4fbff60bafbff32c1fbff86c1fbffb4d6fbfff0dbfbff46dcfbff74f1fbffeef6fbff40f7fbffb611fcffca17fcff1c18fcff9232fcffb63afcff083bfcff7e55fcff2a5ffcff885ffcfffe79fcff5084fcffa684fcffd499fcff1c9efcff729efcffa0b3fcff58b7fcffaeb7fcffdcccfcff72d6fcffccd6fcff42f1fcff7efbfcffd0fbfcff4616fdffe81dfdff3a1efdffb038fdffae43fdff4244fdff785efdffaa6bfdff286cfdffc281fdfffa98fdff0699fdffa2a5fdff52bcfdff9ebcfdff20d2fdff3a5efeff865efeff0874feff849bfeffd29bfeff54b1feff04b5feff50b5feffd2cafeff0ce3feff58e3feffdaf8feffd823ffff2624ffffa839ffff8a45ffffd645ffff585bffff8c6bffffe46bffffae86ffff30fbffff486a0000da6b000084a70000cafc00007c4901002e96010006270200b8730200aeb502004cbb0200d4c00200fac40200c4cc0200aacd02006811030058140300f8200300082103003c280300f8280300b26203009c7c0300423604004e36040050360400663604006836040078360400823604008e360400a43604009c8e0400b28e0400ce8e0400da8e0400f08e0400a00905009e5805009ea70500bcf605001c4f060066a7060098f3060078f60600be450700044b07009c4c07008ae1070032260800c63508002e790800247f080070840800848808009488080066900800dc1c09001e280900422c09001434090098390900a0390900bc390900c4390900e6b2090060c4090068c409007ac4090084c409008cc40900c6090a00ce090a00e0090a00ea090a00f2090a00683b0a00543e0a00ce4a0a00a0520a0024580a002c580a0050580a00ded00b0068320c0070320c008c320c0094320c005abc0c0030c70c001c620e00d8690e0018000f00cc020f00d4070f00d4560f0072b80f00bcff0f000c00100078071000720c10008e561000985710002a581000c8591000765e1000ec5f10005a661000906710004a6b10008a6b1000b671100068a7100032ad1000b0eb1000baec10004ced1000eaee100098f310000ef510007cfb1000b2fc10006c001100ac0011008a3c11004c441100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Floor
-        m_OriginalName: Floor
+        m_Name: JupiterPos
+        m_OriginalName: JupiterPos
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 166732
+        m_UserData: 1114284
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -683,9 +683,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.2233181, y: 0.85396844, z: 0.48738384}
+    m_Target: {x: -0.1402337, y: 0.7229508, z: 0.7120912}
     speed: 2
-    m_Value: {x: -0.2233181, y: 0.85396844, z: 0.48738384}
+    m_Value: {x: -0.1402337, y: 0.7229508, z: 0.7120912}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -732,13 +732,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.059270255, y: 0.9235391, z: -0.34382996, w: -0.15920097}
+    m_Target: {x: 0.03894985, y: 0.84003407, z: -0.5377226, w: 0.06083652}
     speed: 2
-    m_Value: {x: -0.059270214, y: 0.92353845, z: -0.34382972, w: -0.15920085}
+    m_Value: {x: 0.039755974, y: 0.83993304, z: -0.5376579, w: 0.06209585}
   m_Size:
-    m_Target: 0.22525705
+    m_Target: 0.34343126
     speed: 2
-    m_Value: 0.22525705
+    m_Value: 0.34343126
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -802,24 +802,24 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 1
+    m_SearchArea: 2
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\joul4614\Documents\GitHub\SpaceXR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1130.3333}
-    m_SelectedIDs: 98890000
-    m_LastClickedID: 35224
-    m_ExpandedIDs: 000000002e89000030890000328900003489000036890000388900003a8900003c8900003e89000040890000428900004489000046890000488900004a8900004c8900004e89000050890000528900005489000056890000588900005a8900005c8900005e89000060890000628900006489000066890000688900006a8900006c8900006e89000070890000728900007489000076890000788900007a8900007c8900007e890000808900009089000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: aa890000
+    m_LastClickedID: 35242
+    m_ExpandedIDs: 000000002c890000308900003489000036890000388900003a8900003c8900003e89000040890000428900004489000046890000488900004a8900004c8900004e89000050890000528900005489000056890000588900005a8900005c8900005e89000060890000628900006489000066890000688900006a8900006c8900006e89000070890000728900007489000076890000788900007a8900007c8900007e890000b8db020000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -847,7 +847,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e89000030890000328900003489000036890000388900003a8900003c8900003e89000040890000428900004489000046890000488900004a8900004c8900004e89000050890000528900005489000056890000588900005a8900005c8900005e89000060890000628900006489000066890000688900006a8900006c8900006e89000070890000728900007489000076890000788900007a8900007c8900007e89000080890000
+    m_ExpandedIDs: 000000002c8900002e89000030890000328900003489000036890000388900003a8900003c8900003e89000040890000428900004489000046890000488900004a8900004c8900004e89000050890000528900005489000056890000588900005a8900005c8900005e89000060890000628900006489000066890000688900006a8900006c8900006e89000070890000728900007489000076890000788900007a8900007c8900007e890000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -875,7 +875,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000ea95090022bf0b00d89f0000eaa90000e69e0000c89f0000580b01005a0b010048810000dc9b0200d49b0200000000009ece0300366d00000c180600a6840000044b0100721d0300
+    m_ExpandedInstanceIDs: c6230000ea95090022bf0b00d89f0000eaa90000e69e0000c89f0000580b01005a0b010048810000dc9b0200d49b0200000000009ece0300366d00000c180600a6840000044b0100721d0300f2db0200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
