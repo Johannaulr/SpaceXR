@@ -79,7 +79,7 @@ public class pickUp : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
 
-        string planetTag = other.tag;
+        string planetTag = this.tag;
         
         switch (planetTag)
         {
@@ -162,7 +162,7 @@ public class pickUp : MonoBehaviour
 
         //serialController.Temp_Reset();
 
-        string planetTag = other.tag;
+        string planetTag = this.tag;
 
         switch (planetTag) {
 

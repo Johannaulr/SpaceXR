@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using System.IO.Ports;
 using System.Threading;
 
 public class serialController : MonoBehaviour
 {
-
-    public static SerialPort sp = new SerialPort("COM12", 9600);
+    string ConnectionText;
+    public static SerialPort sp;
+    
     // Start is called before the first frame update
     void Start()
     {
-        OpenConnection();
+        ConnectToPort();
     }
 
     // Update is called once per frame
@@ -20,7 +22,24 @@ public class serialController : MonoBehaviour
 
     }
 
-    public void OpenConnection()
+    public void ConnectToPort()
+    {
+        string port = "COM12";
+
+        try
+        {
+            sp = new SerialPort(port, 9600);
+            sp.Open();
+            ConnectionText = "Connected to {port}";
+            Debug.Log(ConnectionText);
+        }
+        catch(Exception e)
+        {
+            ConnectionText = e.Message;
+        }
+    }
+
+    public void Disconnect()
     {
         if (sp != null)
         {
@@ -29,94 +48,49 @@ public class serialController : MonoBehaviour
                 sp.Close();
                 print("Closing port");
             }
-            else
+            sp.Dispose();
+            sp = null;
+            if (ConnectionText != null)
             {
-                sp.Open();
-                sp.ReadTimeout = 100;
-                print("Port open");
+                ConnectionText = "";
             }
+            Debug.Log("Disconnected");
         }
-        else
-        {
-            if (sp.IsOpen)
-            {
-                print("Port is already open");
-            }
-            else
-            {
-                print("Port == null");
-            }
-        }
-
     }
+    
 
     void OnApplicationQuit()
     {
-        sp.Close();
+        Disconnect();
+        
     }
 
     public static void Temp_Earth()
     {
-        if (!sp.IsOpen)
-        {
-            sp.Open();
-            sp.Write("E");
-        }
-        
-
-
-        else
-        {
-            sp.Write("E");
-        }
+        char[] outBuffer = new char[1];
+        outBuffer[0] = 'e';
+        sp.Write(outBuffer, 0, 1);
         Debug.Log("Earth Picked Up");
     }
     public static void Temp_Mercury()
     {
-        if (!sp.IsOpen)
-        {
-            sp.Open();
-            sp.Write("M");
-        }
-
-
-
-        else
-        {
-            sp.Write("M");
-        }
+        char[] outBuffer = new char[1];
+        outBuffer[0] = 'm';
+        sp.Write(outBuffer, 0, 1);
         Debug.Log("Mercury Picked Up");
     }
     public static void Temp_Venus()
     {
-        if (!sp.IsOpen)
-        {
-            sp.Open();
-            sp.Write("V");
-        }
-
-
-
-        else
-        {
-            sp.Write("V");
-        }
+        char[] outBuffer = new char[1];
+        outBuffer[0] = 'v';
+        sp.Write(outBuffer, 0, 1);
         Debug.Log("Venus Picked Up");
     }
     public static void Temp_Reset()
     {
-        if (!sp.IsOpen)
-        {
-            sp.Open();
-            sp.Write("empty");
-        }
-
-
-
-        else
-        {
-            sp.Write("empty");
-        }
+        char[] outBuffer = new char[1];
+        outBuffer[0] = 'n';
+        sp.Write(outBuffer, 0, 1);
         Debug.Log("Planet put down");
     }
 
