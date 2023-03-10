@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/FinalScene.unity
     guid: 15c9b465432c77c46ac079322e93ed90
+  - enabled: 0
+    path: Assets/Oculus/SampleFramework/Usage/Passthrough/Scenes/OverlayPassthrough.unity
+    guid: 698c56db7f615834881cf3fad4dae4b5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2afddfe22ed93d34e9fa38ed32c79568, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f703455b6c03d53478ec5ebc4505be3e, type: 2}

@@ -44,8 +44,9 @@ public class pickUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        windowWarning = GameObject.Find("ButtonWarning");
+        windowWarning = GameObject.Find("WarningUI");
         warningWindowManager = windowWarning.GetComponent<warningWindowManager>();
+
         enabledButton.SetActive(true);
         disabledButton.SetActive(false);
 

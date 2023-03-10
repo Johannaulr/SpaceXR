@@ -7,7 +7,7 @@ public class warningWindowManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.LeanScale(Vector3.zero, 0.3f);
     }
     public void open()
     {
