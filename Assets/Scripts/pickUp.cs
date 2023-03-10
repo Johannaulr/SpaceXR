@@ -39,6 +39,8 @@ public class pickUp : MonoBehaviour
     public GameObject enabledButton;
     public GameObject disabledButton;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,7 +89,8 @@ public class pickUp : MonoBehaviour
                 dialogWindowManager.open();
                 enabledButton.SetActive(false);
                 disabledButton.SetActive(true);
-                serialController.Temp_Earth();
+                //serialController.Temp_Earth();
+                serialController.Temp_Reset();
                 break;
 
             case "Mercury":
@@ -96,7 +99,8 @@ public class pickUp : MonoBehaviour
                 dialogWindowManager.open();
                 enabledButton.SetActive(false);
                 disabledButton.SetActive(true);
-                serialController.Temp_Mercury();
+                //serialController.Temp_Mercury();
+                serialController.Temp_Reset();
                 break;
 
             case "Venus":
@@ -105,7 +109,8 @@ public class pickUp : MonoBehaviour
                 dialogWindowManager.open();
                 enabledButton.SetActive(false);
                 disabledButton.SetActive(true);
-                serialController.Temp_Venus();
+                // serialController.Temp_Venus();
+                serialController.Temp_Reset();
                 break;
 
             case "Mars":
@@ -167,6 +172,7 @@ public class pickUp : MonoBehaviour
                 enabledButton.SetActive(true);
                 disabledButton.SetActive(false);
                 warningWindowManager.close();
+                serialController.Temp_Earth();
                 break;
 
             case "Mercury":
@@ -176,6 +182,7 @@ public class pickUp : MonoBehaviour
                 enabledButton.SetActive(true);
                 disabledButton.SetActive(false);
                 warningWindowManager.close();
+                serialController.Temp_Mercury();
                 break;
 
             case "Venus":
@@ -185,6 +192,7 @@ public class pickUp : MonoBehaviour
                 enabledButton.SetActive(true);
                 disabledButton.SetActive(false);
                 warningWindowManager.close();
+                serialController.Temp_Venus();
                 break;
 
             case "Mars":

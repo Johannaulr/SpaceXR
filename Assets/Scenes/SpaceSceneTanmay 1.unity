@@ -309,6 +309,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &21244241
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -465,6 +468,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &51721069
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -622,7 +628,6 @@ GameObject:
   - component: {fileID: 131126271}
   - component: {fileID: 131126270}
   - component: {fileID: 131126269}
-  - component: {fileID: 131126275}
   - component: {fileID: 131126268}
   m_Layer: 0
   m_Name: Earth
@@ -749,18 +754,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 51721069}
   _colliders:
   - {fileID: 1096964696}
---- !u!114 &131126275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131126266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad164fdc56f8bae4085bc1c713d4d425, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &159183165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1090,7 +1083,6 @@ GameObject:
   - component: {fileID: 326007443}
   - component: {fileID: 326007442}
   - component: {fileID: 326007441}
-  - component: {fileID: 326007447}
   - component: {fileID: 326007440}
   m_Layer: 0
   m_Name: Mercury
@@ -1217,18 +1209,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 629575004}
   _colliders:
   - {fileID: 1620885395}
---- !u!114 &326007447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326007438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad164fdc56f8bae4085bc1c713d4d425, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &368153825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,6 +1628,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &629575004
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1864,7 +1847,6 @@ GameObject:
   - component: {fileID: 697235980}
   - component: {fileID: 697235979}
   - component: {fileID: 697235978}
-  - component: {fileID: 697235984}
   - component: {fileID: 697235977}
   m_Layer: 0
   m_Name: Venus
@@ -1991,18 +1973,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 762588684}
   _colliders:
   - {fileID: 2123856131}
---- !u!114 &697235984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697235975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad164fdc56f8bae4085bc1c713d4d425, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &697654518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,6 +2053,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &752481731
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2192,6 +2165,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &762588684
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2251,6 +2227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &796682273
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2312,6 +2291,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &832013176
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2746,6 +2728,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &936771381
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3179,6 +3164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &1096964696
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3464,6 +3452,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &1217479828
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4520,6 +4511,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &1620885395
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4631,6 +4625,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &1627291913
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4742,6 +4739,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &1649453910
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4945,6 +4945,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bcb907778a00234ea4e7aa9cf238631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1754557903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754557905}
+  - component: {fileID: 1754557904}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1754557904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754557903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad164fdc56f8bae4085bc1c713d4d425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1754557905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754557903}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.141518, y: -27.428677, z: -48.06964}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1845443559
 GameObject:
   m_ObjectHideFlags: 0
@@ -4991,6 +5035,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &1845443562
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5287,6 +5334,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &1918100839
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5502,6 +5552,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &2123856131
 SphereCollider:
   m_ObjectHideFlags: 0
