@@ -10,6 +10,7 @@ public class serialController : MonoBehaviour
     string ConnectionText;
     public static SerialPort sp;
     
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,17 +62,11 @@ public class serialController : MonoBehaviour
 
     void OnApplicationQuit()
     {
+        Temp_Reset();
         Disconnect();
         
     }
 
-    public static void Temp_Earth()
-    {
-        char[] outBuffer = new char[1];
-        outBuffer[0] = 'e';
-        sp.Write(outBuffer, 0, 1);
-        Debug.Log("Earth Picked Up");
-    }
     public static void Temp_Mercury()
     {
         char[] outBuffer = new char[1];
@@ -85,6 +80,55 @@ public class serialController : MonoBehaviour
         outBuffer[0] = 'v';
         sp.Write(outBuffer, 0, 1);
         Debug.Log("Venus Picked Up");
+    }
+
+    public static void Temp_Earth()
+    {
+        char[] outBuffer = new char[1];
+        outBuffer[0] = 'e';
+        sp.Write(outBuffer, 0, 1);
+        Debug.Log("Earth Picked Up");
+    }
+    
+
+    public static void Temp_Mars()
+    {
+        char[] outBuffer = new char[1];
+        outBuffer[0] = 'M';
+        sp.Write(outBuffer, 0, 1);
+        Debug.Log("Mars Picked Up");
+    }
+
+    public static void Temp_Jupiter()
+    {
+        char[] outBuffer = new char[1];
+        outBuffer[0] = 'j';
+        sp.Write(outBuffer, 0, 1);
+        Debug.Log("Jupiter Picked Up");
+    }
+
+    public static void Temp_Saturn()
+    {
+        char[] outBuffer = new char[1];
+        outBuffer[0] = 's';
+        sp.Write(outBuffer, 0, 1);
+        Debug.Log("Saturn Picked Up");
+    }
+
+    public static void Temp_Uranus()
+    {
+        char[] outBuffer = new char[1];
+        outBuffer[0] = 'u';
+        sp.Write(outBuffer, 0, 1);
+        Debug.Log("Uranus Picked Up");
+    }
+
+    public static void Temp_Neptune()
+    {
+        char[] outBuffer = new char[1];
+        outBuffer[0] = 'N';
+        sp.Write(outBuffer, 0, 1);
+        Debug.Log("Neptune Picked Up");
     }
     public static void Temp_Reset()
     {
