@@ -6,6 +6,7 @@ public class pickUp : MonoBehaviour
 {
     //public Transform UI;
     public Transform Positions;
+    //public GameObject[] scaledPlanets;
 
     /*private GameObject earthUI;
     private GameObject mercuryUI;
@@ -15,7 +16,7 @@ public class pickUp : MonoBehaviour
     private GameObject uranusUI;
     private GameObject neptuneUI;
     private GameObject jupiterUI; */
-    
+
     private GameObject earthGhost;
     private GameObject mercuryGhost;
     private GameObject venusGhost;
@@ -34,6 +35,10 @@ public class pickUp : MonoBehaviour
     public AudioSource neptuneAudio;
     public AudioSource jupiterAudio;
 
+    
+
+
+
 
     //private dialogWindowManager dialogWindowManager;
 
@@ -42,7 +47,7 @@ public class pickUp : MonoBehaviour
 
     public GameObject enabledButton;
     public GameObject disabledButton;
-
+    
     
 
     // Start is called before the first frame update
@@ -72,6 +77,9 @@ public class pickUp : MonoBehaviour
         neptuneGhost = Positions.Find("NeptunePos/Ghost").gameObject;
         jupiterGhost = Positions.Find("JupiterPos/Ghost").gameObject;
 
+        
+
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -82,18 +90,9 @@ public class pickUp : MonoBehaviour
         switch (planetTag)
         {
 
-            case "Earth":
-                earthGhost.SetActive(true);
-                //dialogWindowManager = earthUI.GetComponent<dialogWindowManager>();
-                //dialogWindowManager.open();
-                earthAudio.Play();
-                enabledButton.SetActive(false);
-                disabledButton.SetActive(true);
-                
-                break;
-
             case "Mercury":
                 mercuryGhost.SetActive(true);
+                //scaledPlanets[0].SetActive(true);
                 mercuryAudio.Play();
                 //dialogWindowManager = mercuryUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.open();
@@ -104,6 +103,7 @@ public class pickUp : MonoBehaviour
 
             case "Venus":
                 venusGhost.SetActive(true);
+               // scaledPlanets[1].SetActive(true);
                 venusAudio.Play();
                 //dialogWindowManager = venusUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.open();
@@ -112,8 +112,19 @@ public class pickUp : MonoBehaviour
                 
                 break;
 
+            case "Earth":
+                earthGhost.SetActive(true);
+                //scaledPlanets[2].SetActive(true);
+                //dialogWindowManager = earthUI.GetComponent<dialogWindowManager>();
+                //dialogWindowManager.open();
+                earthAudio.Play();
+                enabledButton.SetActive(false);
+                disabledButton.SetActive(true);
+                break;
+
             case "Mars":
                 marsGhost.SetActive(true);
+                //scaledPlanets[3].SetActive(true);
                 marsAudio.Play();
                 //dialogWindowManager = marsUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.open();
@@ -121,8 +132,19 @@ public class pickUp : MonoBehaviour
                 disabledButton.SetActive(true);
                 break;
 
+            case "Jupiter":
+                jupiterGhost.SetActive(true);
+                //scaledPlanets[4].SetActive(true);
+                jupiterAudio.Play();
+                //dialogWindowManager = jupiterUI.GetComponent<dialogWindowManager>();
+                //dialogWindowManager.open();
+                enabledButton.SetActive(false);
+                disabledButton.SetActive(true);
+                break;
+
             case "Saturn":
                 saturnGhost.SetActive(true);
+                //scaledPlanets[5].SetActive(true);
                 saturnAudio.Play();
                 //dialogWindowManager = saturnUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.open();
@@ -132,6 +154,7 @@ public class pickUp : MonoBehaviour
 
             case "Uranus":
                 uranusGhost.SetActive(true);
+                //scaledPlanets[6].SetActive(true);
                 uranusAudio.Play();
                 //dialogWindowManager = uranusUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.open();
@@ -141,6 +164,7 @@ public class pickUp : MonoBehaviour
 
             case "Neptune":
                 neptuneGhost.SetActive(true);
+                //scaledPlanets[7].SetActive(true);
                 neptuneAudio.Play();
                 //dialogWindowManager = neptuneUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.open();
@@ -148,14 +172,7 @@ public class pickUp : MonoBehaviour
                 disabledButton.SetActive(true);
                 break;
 
-            case "Jupiter":
-                jupiterGhost.SetActive(true);
-                jupiterAudio.Play();
-                //dialogWindowManager = jupiterUI.GetComponent<dialogWindowManager>();
-                //dialogWindowManager.open();
-                enabledButton.SetActive(false);
-                disabledButton.SetActive(true);
-                break;
+            
 
         }
     }
@@ -169,19 +186,11 @@ public class pickUp : MonoBehaviour
 
         switch (planetTag) {
 
-            case "Earth":
-                earthGhost.SetActive(false);
-                earthAudio.Stop();
-                //dialogWindowManager = earthUI.GetComponent<dialogWindowManager>();
-                //dialogWindowManager.close();
-                enabledButton.SetActive(true);
-                disabledButton.SetActive(false);
-                warningWindowManager.close();
-                
-                break;
+            
 
             case "Mercury":
                 mercuryGhost.SetActive(false);
+                //scaledPlanets[0].SetActive(false);
                 mercuryAudio.Stop();
                 //dialogWindowManager = mercuryUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.close();
@@ -193,6 +202,7 @@ public class pickUp : MonoBehaviour
 
             case "Venus":
                 venusGhost.SetActive(false);
+                //scaledPlanets[1].SetActive(false);
                 venusAudio.Stop();
                 //dialogWindowManager = venusUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.close();
@@ -202,8 +212,21 @@ public class pickUp : MonoBehaviour
                 
                 break;
 
+            case "Earth":
+                earthGhost.SetActive(false);
+                //scaledPlanets[2].SetActive(false);
+                earthAudio.Stop();
+                //dialogWindowManager = earthUI.GetComponent<dialogWindowManager>();
+                //dialogWindowManager.close();
+                enabledButton.SetActive(true);
+                disabledButton.SetActive(false);
+                warningWindowManager.close();
+
+                break;
+
             case "Mars":
                 marsGhost.SetActive(false);
+                //scaledPlanets[3].SetActive(false);
                 marsAudio.Stop();
                 //dialogWindowManager = marsUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.close();
@@ -212,8 +235,20 @@ public class pickUp : MonoBehaviour
                 warningWindowManager.close();
                 break;
 
+            case "Jupiter":
+                jupiterGhost.SetActive(false);
+                //scaledPlanets[4].SetActive(false);
+                jupiterAudio.Stop();
+                //dialogWindowManager = jupiterUI.GetComponent<dialogWindowManager>();
+                //dialogWindowManager.close();
+                enabledButton.SetActive(true);
+                disabledButton.SetActive(false);
+                warningWindowManager.close();
+                break;
+
             case "Saturn":
                 saturnGhost.SetActive(false);
+                //scaledPlanets[5].SetActive(false);
                 saturnAudio.Stop();
                 //dialogWindowManager = saturnUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.close();
@@ -224,6 +259,7 @@ public class pickUp : MonoBehaviour
 
             case "Uranus":
                 uranusGhost.SetActive(false);
+                //scaledPlanets[6].SetActive(false);
                 uranusAudio.Stop();
                 //dialogWindowManager = uranusUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.close();
@@ -234,6 +270,7 @@ public class pickUp : MonoBehaviour
 
             case "Neptune":
                 neptuneGhost.SetActive(false);
+                //scaledPlanets[7].SetActive(false);
                 neptuneAudio.Stop();
                 //dialogWindowManager = neptuneUI.GetComponent<dialogWindowManager>();
                 //dialogWindowManager.close();
@@ -242,15 +279,7 @@ public class pickUp : MonoBehaviour
                 warningWindowManager.close();
                 break;
 
-            case "Jupiter":
-                jupiterGhost.SetActive(false);
-                jupiterAudio.Stop();
-                //dialogWindowManager = jupiterUI.GetComponent<dialogWindowManager>();
-                //dialogWindowManager.close();
-                enabledButton.SetActive(true);
-                disabledButton.SetActive(false);
-                warningWindowManager.close();
-                break;
+            
         }
     }
 }

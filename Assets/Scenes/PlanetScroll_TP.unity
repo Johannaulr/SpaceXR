@@ -170,6 +170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &7793883
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -308,6 +310,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &44581570
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -380,12 +384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 68354241}
-  - component: {fileID: 68354246}
-  - component: {fileID: 68354245}
-  - component: {fileID: 68354244}
-  - component: {fileID: 68354243}
   - component: {fileID: 68354242}
-  - component: {fileID: 68354247}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Mars
@@ -426,91 +425,6 @@ MonoBehaviour:
   _whenRespawned:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &68354243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68354240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _grabbable: {fileID: 68354244}
-  _rigidbody: {fileID: 68354245}
-  _scaleMassWithSize: 1
---- !u!114 &68354244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68354240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 1
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _maxGrabPoints: -1
---- !u!54 &68354245
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68354240}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
---- !u!114 &68354246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68354240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 68354244}
-  _boundsCollider: {fileID: 1917686264}
-  _colliders:
-  - {fileID: 1421905728}
---- !u!111 &68354247
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68354240}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1001 &118772312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1132,6 +1046,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &248628306
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1197,6 +1113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &395925333
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1257,6 +1175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &405984056
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1479,6 +1399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &449833873
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1546,6 +1468,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &506189633
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1672,6 +1596,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &550330498
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1745,6 +1671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!1 &710951713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,12 +1874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 798358068}
-  - component: {fileID: 798358073}
-  - component: {fileID: 798358072}
-  - component: {fileID: 798358071}
-  - component: {fileID: 798358070}
   - component: {fileID: 798358069}
-  - component: {fileID: 798358074}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Venus
@@ -1992,92 +1915,6 @@ MonoBehaviour:
   _whenRespawned:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &798358070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798358067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _grabbable: {fileID: 798358071}
-  _rigidbody: {fileID: 798358072}
-  _scaleMassWithSize: 1
---- !u!114 &798358071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798358067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 1
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _maxGrabPoints: -1
---- !u!54 &798358072
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798358067}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
---- !u!114 &798358073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798358067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 798358071}
-  _boundsCollider: {fileID: 7793883}
-  _colliders:
-  - {fileID: 2074062872}
---- !u!111 &798358074
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798358067}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 9b42cf9d6c55c4b44aac477ee7a75916, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  - {fileID: 7400000, guid: 9b42cf9d6c55c4b44aac477ee7a75916, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &800284822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,12 +1924,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 800284823}
-  - component: {fileID: 800284828}
-  - component: {fileID: 800284827}
-  - component: {fileID: 800284826}
-  - component: {fileID: 800284825}
   - component: {fileID: 800284824}
-  - component: {fileID: 800284829}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Saturn
@@ -2134,91 +1966,6 @@ MonoBehaviour:
   _whenRespawned:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &800284825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800284822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _grabbable: {fileID: 800284826}
-  _rigidbody: {fileID: 800284827}
-  _scaleMassWithSize: 1
---- !u!114 &800284826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800284822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 1
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _maxGrabPoints: -1
---- !u!54 &800284827
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800284822}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
---- !u!114 &800284828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800284822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 800284826}
-  _boundsCollider: {fileID: 395925333}
-  _colliders:
-  - {fileID: 905079613}
---- !u!111 &800284829
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800284822}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &814772628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,6 +2047,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &828879451
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2412,6 +2161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &905079613
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2516,7 +2267,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 990809174}
-  - component: {fileID: 990809175}
   m_Layer: 0
   m_Name: Planets_Hand
   m_TagString: Untagged
@@ -2550,34 +2300,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &990809175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990809173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9ca456fb824824cbb96aea8f26bcb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonLeft: {fileID: 1760207764}
-  buttonRight: {fileID: 1169219483}
-  planetDisplaySmall: {fileID: 1851869812}
-  planetDisplayLarge: {fileID: 1898638529}
-  planetChecker: {fileID: 710951713}
-  planets:
-  - {fileID: 1982872444}
-  - {fileID: 798358067}
-  - {fileID: 1694562413}
-  - {fileID: 68354240}
-  - {fileID: 6757553451550998748}
-  - {fileID: 800284822}
-  - {fileID: 1469517738}
-  - {fileID: 1171556882}
-  - {fileID: 1772590919}
-  translateSpeed: 0.02
 --- !u!1001 &1008915421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3230,12 +2952,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1171556883}
-  - component: {fileID: 1171556888}
-  - component: {fileID: 1171556887}
-  - component: {fileID: 1171556886}
-  - component: {fileID: 1171556885}
   - component: {fileID: 1171556884}
-  - component: {fileID: 1171556889}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Neptune
@@ -3276,91 +2993,6 @@ MonoBehaviour:
   _whenRespawned:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1171556885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171556882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _grabbable: {fileID: 1171556886}
-  _rigidbody: {fileID: 1171556887}
-  _scaleMassWithSize: 1
---- !u!114 &1171556886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171556882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 1
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _maxGrabPoints: -1
---- !u!54 &1171556887
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171556882}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
---- !u!114 &1171556888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171556882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1171556886}
-  _boundsCollider: {fileID: 550330498}
-  _colliders:
-  - {fileID: 828879451}
---- !u!111 &1171556889
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171556882}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1001 &1180954224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3486,6 +3118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &1244014224
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3889,6 +3523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &1421905728
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4140,6 +3776,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!1 &1469517738
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,12 +3787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469517739}
-  - component: {fileID: 1469517744}
-  - component: {fileID: 1469517743}
-  - component: {fileID: 1469517742}
-  - component: {fileID: 1469517741}
   - component: {fileID: 1469517740}
-  - component: {fileID: 1469517745}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Uranus
@@ -4195,92 +3828,6 @@ MonoBehaviour:
   _whenRespawned:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1469517741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469517738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _grabbable: {fileID: 1469517742}
-  _rigidbody: {fileID: 1469517743}
-  _scaleMassWithSize: 1
---- !u!114 &1469517742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469517738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 1
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _maxGrabPoints: -1
---- !u!54 &1469517743
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469517738}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
---- !u!114 &1469517744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469517738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1469517742}
-  _boundsCollider: {fileID: 248628306}
-  _colliders:
-  - {fileID: 44581570}
---- !u!111 &1469517745
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469517738}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 9b42cf9d6c55c4b44aac477ee7a75916, type: 2}
-  - {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1474579115
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,12 +4076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1694562414}
-  - component: {fileID: 1694562419}
-  - component: {fileID: 1694562418}
-  - component: {fileID: 1694562417}
-  - component: {fileID: 1694562416}
   - component: {fileID: 1694562415}
-  - component: {fileID: 1694562420}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Earth
@@ -4575,91 +4117,6 @@ MonoBehaviour:
   _whenRespawned:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1694562416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694562413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _grabbable: {fileID: 1694562417}
-  _rigidbody: {fileID: 1694562418}
-  _scaleMassWithSize: 1
---- !u!114 &1694562417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694562413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 1
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _maxGrabPoints: -1
---- !u!54 &1694562418
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694562413}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
---- !u!114 &1694562419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694562413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1694562417}
-  _boundsCollider: {fileID: 449833873}
-  _colliders:
-  - {fileID: 1244014224}
---- !u!111 &1694562420
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694562413}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1001 &1760207763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5062,6 +4519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &1917686264
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5181,12 +4640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1982872445}
-  - component: {fileID: 1982872450}
-  - component: {fileID: 1982872449}
-  - component: {fileID: 1982872448}
-  - component: {fileID: 1982872447}
   - component: {fileID: 1982872446}
-  - component: {fileID: 1982872451}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Mercury
@@ -5227,91 +4681,6 @@ MonoBehaviour:
   _whenRespawned:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1982872447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982872444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _grabbable: {fileID: 1982872448}
-  _rigidbody: {fileID: 1982872449}
-  _scaleMassWithSize: 1
---- !u!114 &1982872448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982872444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 1
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _maxGrabPoints: -1
---- !u!54 &1982872449
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982872444}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
---- !u!114 &1982872450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982872444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1982872448}
-  _boundsCollider: {fileID: 405984056}
-  _colliders:
-  - {fileID: 506189633}
---- !u!111 &1982872451
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982872444}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1987314659
 GameObject:
   m_ObjectHideFlags: 0
@@ -5527,6 +4896,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
   Positions: {fileID: 0}
+  enabledButton: {fileID: 0}
+  disabledButton: {fileID: 0}
 --- !u!135 &2074062872
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6013,40 +5384,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &6757553451550998736
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6757553451550998748}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
---- !u!114 &6757553451550998738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6757553451550998748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 1
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _maxGrabPoints: -1
 --- !u!4 &6757553451550998743
 Transform:
   m_ObjectHideFlags: 0
@@ -6073,12 +5410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6757553451550998743}
-  - component: {fileID: 6757553451550998749}
-  - component: {fileID: 6757553451550998736}
-  - component: {fileID: 6757553451550998738}
-  - component: {fileID: 6757553451550998750}
   - component: {fileID: 6757553451550998751}
-  - component: {fileID: 6757553451550998752}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Jupiter
@@ -6086,41 +5418,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &6757553451550998749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6757553451550998748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 6757553451550998738}
-  _boundsCollider: {fileID: 578393508}
-  _colliders:
-  - {fileID: 1457420872}
---- !u!114 &6757553451550998750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6757553451550998748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _grabbable: {fileID: 6757553451550998738}
-  _rigidbody: {fileID: 6757553451550998736}
-  _scaleMassWithSize: 1
 --- !u!114 &6757553451550998751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6137,22 +5434,6 @@ MonoBehaviour:
   _whenRespawned:
     m_PersistentCalls:
       m_Calls: []
---- !u!111 &6757553451550998752
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6757553451550998748}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 57b9d7a9be9557a41ae2724aa2829bef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &7410389674006380888
 MonoBehaviour:
   m_ObjectHideFlags: 0

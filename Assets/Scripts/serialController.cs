@@ -20,7 +20,9 @@ public class serialController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //string msg = sp.ReadLine();
+        //Debug.Log(msg);
+        
     }
 
     public void ConnectToPort()
@@ -31,12 +33,14 @@ public class serialController : MonoBehaviour
         {
             sp = new SerialPort(port, 9600);
             sp.Open();
+            sp.WriteTimeout = 10;
             ConnectionText = "Connected to {port}";
             Debug.Log(ConnectionText);
         }
         catch(Exception e)
         {
             ConnectionText = e.Message;
+            Debug.Log(ConnectionText);
         }
     }
 
@@ -73,6 +77,7 @@ public class serialController : MonoBehaviour
         outBuffer[0] = 'm';
         sp.Write(outBuffer, 0, 1);
         Debug.Log("Mercury Picked Up");
+        Thread.Sleep(20);
     }
     public static void Temp_Venus()
     {
@@ -80,6 +85,7 @@ public class serialController : MonoBehaviour
         outBuffer[0] = 'v';
         sp.Write(outBuffer, 0, 1);
         Debug.Log("Venus Picked Up");
+        Thread.Sleep(20);
     }
 
     public static void Temp_Earth()
@@ -88,6 +94,7 @@ public class serialController : MonoBehaviour
         outBuffer[0] = 'e';
         sp.Write(outBuffer, 0, 1);
         Debug.Log("Earth Picked Up");
+        Thread.Sleep(20);
     }
     
 
