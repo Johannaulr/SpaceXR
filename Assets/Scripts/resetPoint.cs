@@ -10,7 +10,12 @@ public class resetPoint : MonoBehaviour
     [SerializeField]
     GameObject player;
     [SerializeField] Camera playerHead;
-    
+
+    private void Awake()
+    {
+        ResetPosition();
+    }
+
     [ContextMenu("Reset Position")]
     public void ResetPosition()
     {
